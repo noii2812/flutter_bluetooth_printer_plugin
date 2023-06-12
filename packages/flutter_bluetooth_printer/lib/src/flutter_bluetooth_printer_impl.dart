@@ -127,7 +127,8 @@ class FlutterBluetoothPrinter {
     final height = arg['height'] as int;
     final paperSize = arg['paperSize'] as PaperSize;
 
-    img.Image src = img.Image.fromBytes(width, height, srcBytes);
+    img.Image src =
+        img.Image.fromBytes(width: width, height: height, bytes: srcBytes);
     final w = src.width;
     final h = src.height;
 
